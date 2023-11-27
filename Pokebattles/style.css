@@ -62,11 +62,17 @@ body{
     text-align: center;
     background-color: #ffffff;   
 }
+.nombreMascota:hover{
+    background-color: #0eff02;
+}
 .imgMascota{
     width: 100px;
     height: 100px;
     align-self: center;
     opacity: 0.5;
+}
+.imgMascota:hover{
+    opacity: 1;
 }
 .btnSeleccionarMascota{
     font-family: var(--subTitles);
