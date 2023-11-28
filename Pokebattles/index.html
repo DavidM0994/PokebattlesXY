@@ -15,37 +15,79 @@
     <section class="containerSectionMascotas">
         <p class="subTitleMascotas">ELIGE TU MASCOTA:</p>
         <div class="containerMascotas1">
-            <div class="containermascota">
+            <input class="inputMascotas" type="radio" name="mascota" id="hipodoge">
+            <label class="containermascota" for="hipodoge">
                 <p class="nombreMascota">Hipodoge</p>
                 <img class="imgMascota" src="../mascotas/hipodoge.png" alt="">
-            </div>
-            <div class="containermascota">
+            </label>
+            <input class="inputMascotas" type="radio" name="mascota" id="capipego">
+            <label class="containermascota" for="capipego">
                 <p class="nombreMascota">Capipego</p>
                 <img class="imgMascota" src="../mascotas/capipepo.png" alt="">
-            </div>
-            <div class="containermascota">
+            </label>
+            <input class="inputMascotas" type="radio" name="mascota" id="ratigueya">
+            <label class="containermascota" for="ratigueya">
                 <p class="nombreMascota">Ratigueya</p>
                 <img class="imgMascota" src="../mascotas/ratigueya.png" alt="">
-            </div>
+            </label>
         </div>
         <div class="containerMascotas2">
-            <div class="containermascota">
+            <input class="inputMascotas" type="radio" name="mascota" id="langostel">
+            <label class="containermascota" for="langostel">
                 <p class="nombreMascota">Langostel</p>
                 <img class="imgMascota" src="../mascotas/langostelvis.png" alt="">
-            </div>
-            <div class="containermascota">
+            </label>
+            <input class="inputMascotas" type="radio" name="mascota" id="tucapalma">
+            <label class="containermascota" for="tucapalma">
                 <p class="nombreMascota">Tucapalma</p>
                 <img class="imgMascota" src="../mascotas/tucapalma.png" alt="">
-            </div>
-            <div class="containermascota">
+            </label>
+            <input class="inputMascotas" type="radio" name="mascota" id="pydos">
+            <label class="containermascota" for="pydos">
                 <p class="nombreMascota">Pydos</p>
                 <img class="imgMascota" src="../mascotas/pydos.png" alt="">
-            </div>
+            </label>
         </div>
         <button class="btnSeleccionarMascota">Seleccionar</button>
     </section>
-    <section></section>
-    
+    <section class="containerSectionAtaque">
+        <p class="subTitleAtaque">ELIGE TU ATAQUE:</p>
+        <div class="containerataques">
+            <input class="inputAtaque" type="radio" name="ataque" id="fuego">
+            <label class="ataque" for="fuego">
+                <div class="btnFuego btnAtaque" id="btnFuego">🔥</div>
+            </label>
+            <input class="inputAtaque" type="radio" name="ataque" id="agua">
+            <label class="ataque" for="agua">
+                <div class="btnAgua btnAtaque" id="btnAgua">💧</div>
+            </label>
+            <input class="inputAtaque" type="radio" name="ataque" id="tierra">
+            <label class="ataque" for="tierra">
+                <div class="btnTierra btnAtaque" id="btnTierra">🪨</div>
+            </label>
+        </div>
+        <p class="subTitleCombate">COMBATE:</p>
+        <div class="containerCombate">
+            <label class="containermascota combateContainermascota" for="hipodoge">
+                <p class="nombreMascota combateNombreMascota">Hipodoge</p>
+                <div class="combateAtaque">💧</div>
+                <span class="combateVidas">3</span>
+                <img class="combateImgMascota" src="../mascotas/hipodoge.png" alt="">
+            </label>
+            <p class="containerVs">VS</p>
+            <label class="containermascota combateContainermascota" for="hipodoge">
+                <p class="nombreMascota combateNombreMascota">Hipodoge</p>
+                <div class="combateAtaque">💧</div>
+                <span class="combateVidas">3</span>
+                <img class="combateImgMascota" src="../mascotas/hipodoge.png" alt="">
+            </label>
+        </div>
+        <p class="subTitleResultadoPartida">¡BUENA SUERTE!</p>
+    </section>
+    <section class="containerSectionResultado">
+        <p class="subTitleResultadoTotal">¡GANASTE!</p>
+        <button class="btnResultado">VOLVER A JUGAR</button>
+    </section>
     <script src="../Pokebattles/script.js"></script>
 </body>
 </html>

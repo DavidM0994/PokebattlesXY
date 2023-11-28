@@ -18,7 +18,7 @@ body{
 }
 .imgFondo{
     position: absolute;
-    z-index: -1;
+    z-index: -10;
     width: 98.9vw;
     height: 100vh;
 }
@@ -29,7 +29,7 @@ body{
     padding: 30px 0 0 0;
 }
 /*seccion de elegir la mascota*/
-.containerSectionMascotas{
+.containerSectionMascotas, .containerSectionAtaque, .containerSectionResultado{
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.3);
     width: 600px;
@@ -37,7 +37,7 @@ body{
     border-radius: 20px;
     font-family: var(--subTitles);
 }
-.subTitleMascotas{
+.subTitleMascotas, .subTitleAtaque, .subTitleCombate{
     font-size: 2rem;
     margin: 20px 0 20px 20px;
 }
@@ -53,17 +53,23 @@ body{
     width: 150px;
     cursor: pointer;
 }
-.containermascota:hover{
-    border: solid 2px #0eff02;
+.inputMascotas{
+    display: none;
+}
+.inputMascotas:checked + label{
+    border: solid 2px #5eff00;
+}
+.inputMascotas:checked + label p{
+    background-color: #5eff00;
+}
+.inputMascotas:checked + label img{
+    opacity: 1;
 }
 .nombreMascota{
-    writing-mode: vertical-lr;
+    writing-mode: vertical-lr;/*invertir texto en vertical*/
     text-orientation: upright;
     text-align: center;
     background-color: #ffffff;   
-}
-.nombreMascota:hover{
-    background-color: #0eff02;
 }
 .imgMascota{
     width: 100px;
@@ -71,13 +77,113 @@ body{
     align-self: center;
     opacity: 0.5;
 }
-.imgMascota:hover{
-    opacity: 1;
-}
-.btnSeleccionarMascota{
+.btnSeleccionarMascota, .btnResultado{
     font-family: var(--subTitles);
     padding: 5px 10px;
     font-size: 1.2rem;
     margin: 10px 0 20px calc(50% - 50px);
     border-radius: 10px;
 }
+.btnSeleccionarMascota, .btnResultado:hover{
+    background-color: #5eff00;
+}
+/*Seccion elegir ataque*/
+.containerataques, .containerCombate{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.containerVs{
+    align-self: center;
+    font-family: var(--titleFont);
+    font-size: 50px;
+}
+.btnAtaque{
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.inputAtaque{
+    display: none;
+}
+.inputAtaque:checked + label .btnAtaque{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.combateContainermascota{
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.652);
+    
+}
+.combateAtaque{
+    position: absolute;
+    font-size: 2.5rem;
+    left: 18px;
+    background-color: rgb(255, 0, 0);
+}
+.combateVidas{
+    position: absolute;
+    left: 112px;
+    bottom: 0;
+    font-size: 1.5rem;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding: 0 10px;
+}
+.combateImgMascota{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 10px;
+}
+.combateNombreMascota{
+    background-color: rgb(255, 0, 0);
+}
+.subTitleResultadoPartida{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #00fbffb7;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 10px 0;
+    color: rgb(34, 0, 255);
+}
+/*seccion Resultado*/
+.containerSectionResultado{
+    display: flex;
+    flex-direction: column;
+}
+.subTitleResultadoTotal{
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 30px 0 0 0;
+    font: normal bold 46px/1 "proxima-nova";
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 14px rgba(255, 0, 0, 1);
+    animation: cssAnimation_0 3000ms infinite ease-in 1500ms;
+}
+  @keyframes cssAnimation_0 {
+    from {
+      text-shadow: 0px 0px 14px rgba(255, 0, 0, 1);
+    }
+  
+    to {
+      text-shadow: 0px 0px 75px rgba(250, 2, 2, 1);
+    }
+  }
+.btnResultado{
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.689);
+    color: #ffffff;
+}
+  
+  
