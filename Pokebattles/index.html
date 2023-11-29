@@ -53,40 +53,45 @@
     <section class="containerSectionAtaque" id="containerSectionAtaque">
         <p class="subTitleAtaque">ELIGE TU ATAQUE:</p>
         <div class="containerataques">
-            <input class="inputAtaque" type="radio" name="ataque" id="fuego">
-            <label class="ataque" for="fuego">
-                <div class="btnFuego btnAtaque" id="btnFuego">🔥</div>
-            </label>
-            <input class="inputAtaque" type="radio" name="ataque" id="agua">
-            <label class="ataque" for="agua">
-                <div class="btnAgua btnAtaque" id="btnAgua">💧</div>
-            </label>
-            <input class="inputAtaque" type="radio" name="ataque" id="tierra">
-            <label class="ataque" for="tierra">
-                <div class="btnTierra btnAtaque" id="btnTierra">🪨</div>
-            </label>
+            <button class="btnFuego btnAtaque" id="btnFuego">🔥</button>
+            <button class="btnAgua btnAtaque" id="btnAgua">💧</button>
+            <button class="btnTierra btnAtaque" id="btnTierra">🪨</button>
         </div>
         <p class="subTitleCombate">COMBATE:</p>
         <div class="containerCombate">
             <label class="containermascota combateContainermascota" for="hipodoge">
                 <p class="nombreMascota combateNombreMascota" id="nombreMascota"></p>
-                <div class="combateAtaque">💧</div>
-                <span class="combateVidas">3</span>
-                <img class="combateImgMascota" id="imgMascota" src="" alt="">
+                <div class="combateAtaque" id="contenedorAtaqueMascota">❓</div>
+                <span class="combateVidas" id="contenedorVidasMascota">3</span>
+                <img class="combateImgMascota" id="imgMascota" src="../mascotas/interrogante.png" alt="">
             </label>
             <p class="containerVs">VS</p>
             <label class="containermascota combateContainermascota" for="hipodoge">
                 <p class="nombreMascota combateNombreMascota" id="nombreMascotaEnemigo"></p>
-                <div class="combateAtaque">💧</div>
-                <span class="combateVidas">3</span>
-                <img class="combateImgMascota" id="imgMascotaEnemigo" src="" alt="">
+                <div class="combateAtaque" id="contenedorAtaqueEnemigo">❓</div>
+                <span class="combateVidas" id="contenedorVidasEnemigo">3</span>
+                <img class="combateImgMascota" id="imgMascotaEnemigo" src="../mascotas/interrogante.png" alt="">
             </label>
         </div>
-        <p class="subTitleResultadoPartida">¡BUENA SUERTE!</p>
+        <p class="subTitleResultadoPartida" id="contenedorMensajePartida">¡BUENA SUERTE!</p>
     </section>
     <section class="containerSectionResultado" id="containerSectionResultado">
-        <p class="subTitleResultadoTotal">¡GANASTE!</p>
-        <button class="btnResultado">VOLVER A JUGAR</button>
+        <br><br><br><br>
+        <div class="containerCombate">
+            <label class="containermascota combateContainermascota" for="hipodoge">
+                <p class="nombreMascota combateNombreMascota" id="nombreMascota2"></p>
+                <span class="combateVidas" id="contenedorVidasMascota2">3</span>
+                <img class="combateImgMascota" id="imgMascota2" src="" alt="">
+            </label>
+            <p class="containerVs">VS</p>
+            <label class="containermascota combateContainermascota" for="hipodoge">
+                <p class="nombreMascota combateNombreMascota" id="nombreMascotaEnemigo2"></p>
+                <span class="combateVidas" id="contenedorVidasEnemigo2">3</span>
+                <img class="combateImgMascota" id="imgMascotaEnemigo2" src="" alt="">
+            </label>
+        </div>
+        <p class="subTitleResultadoTotal" id="contenedorMensajeFinJuego"></p>
+        <button class="btnResultado" id="btnReiniciar">VOLVER A JUGAR</button>
     </section>
     <script src="../Pokebattles/script.js"></script>
 </body>
