@@ -123,7 +123,7 @@ body{
 .combateAtaque{
     position: absolute;
     font-size: 2.5rem;
-    left: 18px;
+    left: 16px;
     background-color: rgb(255, 0, 0);
 }
 .combateVidas{
@@ -228,7 +228,7 @@ body{
     }
     .combateAtaque{
         font-size: 1.5rem;
-        left: 14px;
+        left: 12px;
     }
     .combateVidas{
         left: 95px;
@@ -262,6 +262,7 @@ body{
     }
     .combateAtaque{
         font-size: 1rem;
+        left: 12px;
     }
     .combateVidas{
         left: 75px;
