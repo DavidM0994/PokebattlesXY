@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .imgFondo{
     position: absolute;
@@ -44,6 +45,7 @@ body{
 .containerMascotas1, .containerMascotas2{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .containermascota{
     display: flex;
@@ -184,4 +186,91 @@ body{
     color: #ffffff;
 }
   
-  
+@media (max-width: 630px){
+    .title{
+        font-size: 2rem;
+    }
+    .containerSectionMascotas, .containerSectionAtaque, .containerSectionResultado{
+        width: 350px;
+    }
+    .containerSectionAtaque, .containerSectionResultado{
+        margin: 50px 0 0 0;
+    }
+    .subTitleMascotas, .subTitleAtaque, .subTitleCombate{
+        font-size: 1rem;
+    }
+    .containermascota{
+        width: 100px;
+        margin: 10px 10px 0 10px;
+    }
+    .nombreMascota{
+        font-size: 12px;   
+    }
+    .imgMascota{
+        width: 80px;
+        height: 80px;
+    }
+    .containerVs{
+        font-size: 30px;
+    }
+    .btnAtaque{
+        font-size: 2rem;
+    }
+    .containerataques{
+        gap: 30px;
+    } 
+    .containerCombate{
+        gap: 0;
+    }
+    .combateContainermascota{
+        width: 118px;
+        height: 116px;
+    }
+    .combateAtaque{
+        font-size: 1.5rem;
+        left: 14px;
+    }
+    .combateVidas{
+        left: 95px;
+        bottom: 0;
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+    .combateImgMascota{
+        width: 100px;
+        height: 100px;
+        left: 10px;
+    }
+    .subTitleResultadoTotal{
+        font: normal bold 26px/1 "proxima-nova";
+    }
+}
+
+@media (max-width: 380px){
+    .title{
+        font-size: 1.8rem;
+    }
+    .containerSectionMascotas, .containerSectionAtaque, .containerSectionResultado{
+        width: 280px;
+    }
+    .containerVs{
+        font-size: 20px;
+    }
+    .combateContainermascota{
+        width: 98px;
+        height: 96px;
+    }
+    .combateAtaque{
+        font-size: 1rem;
+    }
+    .combateVidas{
+        left: 75px;
+    }
+    .combateImgMascota{
+        width: 80px;
+        height: 80px;
+    }
+    .subTitleResultadoTotal{
+        font: normal bold 26px/1 "proxima-nova";
+    }
+}
